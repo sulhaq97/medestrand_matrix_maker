@@ -1,5 +1,3 @@
-setwd("C:/Users/Sami/OneDrive - University of Toronto/Masters/Code/Reference Scripts/Basics_Bioinformatics/")
-
 library(MeDEStrand)
 library(BSgenome.Hsapiens.UCSC.hg19)
 library(Repitools)
@@ -44,5 +42,3 @@ for(each.bam.file in bam.files.names) {
 # the first column of the matrix contains NAs
 matrix.of.pbls <- matrix.of.pbls[,-c(1)]
 
-# the colnames are the same as bam file names 
-colnames(matrix.of.pbls) <- substr(bam.files.names, 1, 9)
